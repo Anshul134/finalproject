@@ -1,0 +1,67 @@
+</html>
+<head>
+	<script src="groundmanrique.js">
+
+   	</script> 
+</head>
+<body>
+  <form>
+     <h3> A) TOPOGRAPHY </h3><br>
+       <div style="float:left" "text-align:center">
+       Land Erodibility/ Slope Class <input id="erode" type="text"  name="landErode" onblur="calcLand()"><br><br>
+        </div>
+
+      <div style="padding:2px" id="Land"></div>
+       <h3> B) WATER AVAILABILITY </h3><br>
+       <div style="float:left"><br>
+       Soil Texture Surface <input id="texture" type="text"  name="soilTexture" onblur="calcSoil()"><br><br>
+</div>
+    <div id="Soil"></div><br><br>
+
+
+  <h3> C) Oxygen Availabiltiy </h3><br>
+       <div style="float:left" "text-align:center">
+        Drainage <input id="drain" type="text"  name="drainage" onblur="calcDrain()"><br><br>
+ </div>
+
+      <div id="oxygen"></div><br>
+       
+         <div style="float:left">
+       water logging <input id="water" type="text"  name="waterLog" onblur="calcWater()">
+        </div>
+        <h3> E) Root Development </h3> 
+        <div style="float:left">
+        Root Depth<input id="rootD" type="text"  name="rootDepth" onblur="calcRoot()"><br><br>
+         </div><br>
+      <div id="root"></div>
+
+         <h2>F) Nutrient Requirement</h2><br>
+        <div style="float:left">
+         C.E.C of Subsoil  Clay <input id="cec01" type="text"  name="cec" onblur="calccec()" >
+         </div>
+         <div id="cec02"></div>
+         <br><br>
+        
+        <div style="float:left">
+         base saturate <input id="base01" type="text"  name="base" onblur="calcbase()" >
+         </div>
+         <div id="base02"></div>
+         <br><br>
+
+         <div style="float:left">
+         calcium carbonate <input id="cal01" type="text"  name="cal" onblur="calccarbo()" >
+         </div>
+         <div id="cal02"></div>
+         <br><br>
+
+
+      <div id="carbon"></div><br><br>
+       <button type="button" onclick="calc()" value="Submit Data">Submit Data</button>
+        <input type="reset" value="reset">
+         <button type="button" onclick="calclui()" value="Submit Data">LUI-FA</button>
+        <div id="result"></div>       
+        <div id="fa"></div>
+     
+   </form>
+</body>
+</html>
